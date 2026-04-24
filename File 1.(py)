@@ -1,1 +1,22 @@
+from kivy.app import App
+from kivy.uix.button import Button
+import random
 
+verbes = [
+    ("gehen", "ging", "gegangen"),
+    ("sehen", "sah", "gesehen"),
+    ("essen", "aß", "gegessen")
+]
+
+class VerbeApp(App):
+
+    def build(self):
+        self.button = Button(text="Clique pour voir un verbe")
+        self.button.bind(on_press=self.nouveau_verbe)
+        return self.button
+
+    def nouveau_verbe(self, instance):
+        verbe = random.choice(verbes)
+        self.button.text = f"{verbe[0]} - {verbe[1]} - {verbe[2]}"
+
+VerbeApp().run()
