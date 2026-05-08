@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: rgba(3, 226, 255, 0.54);;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#app {
+  background: rgba(3, 226, 255, 0.54);
+  padding: 50px;
+  border-radius: 50px;
+  width: 300px;
+  text-align: center;
+}
+
+button {
+  background-color: rgba(79, 3, 255, 0.54); ;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;border: none;
+  cursor: pointer;
+}
